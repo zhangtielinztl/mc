@@ -1,0 +1,24 @@
+
+/*
+ * 表单总体布局
+ */
+#form-container {
+    margin-top: 99px;
+    border-radius: 30px;
+    border-style: groove;
+    border-width: 5px;
+    border-color: #5cb85c;
+}
+
+/*
+ * 标签
+ */
+label {
+
+    font-size: 25px;
+}
+body {
+    height: 100%;
+    background: #fff url(/images/d.jpg) no-repeat;
+    background-size: cover;
+}

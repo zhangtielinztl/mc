@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.mc.mapper.ServiceprojectMapper" >
+<select id="findAll" parameterType="long" resultType="com.mc.pojo.Serviceproject">
+    SELECT * FROM serviceproject WHERE id1=#{id1};
+</select>
+    <select id="findServiceprojectById" parameterType="long" resultType="com.mc.pojo.Serviceproject">
+        SELECT * FROM serviceproject WHERE id=#{id};
+    </select>
+    <select id="findServiceprojectByName" parameterType="String" resultType="com.mc.pojo.Serviceproject">
+        SELECT * FROM serviceproject WHERE name=#{name};
+    </select>
+    <delete id="deleteServiceprojectById" parameterType="com.mc.pojo.Serviceproject">
+        DELETE FROM serviceproject WHERE id=#{id};
+    </delete>
+</mapper>

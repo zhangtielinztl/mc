@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.mc.mapper.DoctorMapper" >
+    <insert id="addDoctor" parameterType="com.mc.pojo.Doctor">
+        INSERT INTO doctor(account,name,sex,age,phone,nation,idCard,type,hospital,department,information)
+        VALUE (#{account},#{name},#{sex},#{age},#{phone},#{nation},#{idCard},#{type},#{hospital},#{department},#{information})
+    </insert>
+    <update id="updateDoctor" parameterType="com.mc.pojo.Doctor">
+        UPDATE doctor SET
+        id=#{id},
+        sex=#{sex},
+        age=#{age},
+        phone=#{phone},
+        nation=#{nation},
+        idCard=#{idCard},
+        type=#{type},
+        hospital=#{hospital},
+        department=#{department},
+        information=#{information}
+        WHERE id=#{id};
+    </update>
+    <select id="findDoctorByName" parameterType="String" resultType="com.mc.pojo.Doctor">
+        SELECT * FROM doctor WHERE name=#{name};
+    </select>
+    <select id="findDoctorByPhone" parameterType="String" resultType="com.mc.pojo.Doctor">
+        SELECT * FROM doctor WHERE phone=#{phone};
+    </select>
+</mapper>

@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 public class TbUser implements Serializable{
-    private Long id;
+    private String id;
 
     private String userName;
 
@@ -18,11 +18,11 @@ public class TbUser implements Serializable{
 
     private Date updated;
 
-	public Long getId() {
+	public String getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 

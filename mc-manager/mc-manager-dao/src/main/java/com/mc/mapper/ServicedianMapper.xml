@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.mc.mapper.ServicedianMapper" >
+    <insert id="addServicedian" parameterType="com.mc.pojo.Servicedian">
+         INSERT INTO servicedian(id,name) VALUE(#{id},#{name});
+    </insert>
+    <update id="updateServicedianByName" parameterType="com.mc.pojo.Servicedian">
+         UPDATE servicedian SET
+        name=#{name}
+        WHERE id=#{id};
+    </update>
+    <delete id="deleteServicedian" parameterType="com.mc.pojo.Servicedian">
+        DELETE FROM servicedian WHERE id=#{id};
+    </delete>
+</mapper>

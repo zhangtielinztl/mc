@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.mc.mapper.RelateMapper" >
+    <insert id="addRelate" parameterType="com.mc.pojo.Relate">
+        INSERT INTO relate(account,name,sex,age,phone,idCard,information)
+        VALUE (#{account},#{name},#{sex},#{age},#{phone},#{idCard},#{information})
+    </insert>
+    <update id="updateRelate" parameterType="com.mc.pojo.Relate">
+        UPDATE relate SET
+        sex=#{sex},
+        age=#{age},
+        phone=#{phone},
+        idCard=#{idCard},
+        information=#{information}
+        WHERE id=#{id};
+    </update>
+    <select id="findRelateByName" parameterType="String" resultType="com.mc.pojo.Relate">
+        SELECT * FROM relate WHERE name=#{name};
+    </select>
+    <select id="findRelateByPhone" parameterType="String" resultType="com.mc.pojo.Relate">
+        SELECT * FROM relate WHERE phone=#{phone};
+    </select>
+
+</mapper>

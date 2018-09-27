@@ -57,13 +57,13 @@
     <div class="col-lg-12 col-lg-offset-5" id="a">
         <img src="/images/t.jpg" alt="" width="100" height="100" >
         <p><b>老   人  健  康</b></p>
-        <button><a href="http://localhost:8084" >点我进入</a></button>
+        <button><a href="http://localhost:8085" >点我进入</a></button>
     </div>
 
     <div class="col-lg-2  col-lg-offset-3" id="b">
         <img src="/images/tt.jpg" alt="" width="100" height="100">
         <p><b>家   庭  医  生</b></p>
-        <button><a href="http://localhost:8082" >点我进入</a></button>
+        <button><a href="http://localhost:8081" >点我进入</a></button>
     </div>
     <div class="col-lg-2 " id="c">
         >

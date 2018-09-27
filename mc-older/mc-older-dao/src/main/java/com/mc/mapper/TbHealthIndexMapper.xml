@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.mc.mapper.TbHealthIndexMapper" >
+
+<select id="getTbHealthIndex" resultType="com.mc.pojo.TbHealthIndex">
+    SELECT * FROM tbhealthindex
+</select>
+
+<insert id="addTbHealthIndex" parameterType="com.mc.pojo.TbHealthIndex">
+    INSERT INTO tbhealthindex (bloodPressure,glycemic,bloodOxygen,heightWeght,fat,cholesterol,heartRate,electrocardiographic,hemoglobin)
+    VALUES(#{bloodPressure},#{glycemic},#{bloodOxygen},#{heightWeght},#{fat},#{cholesterol},#{heartRate},#{electrocardiographic},#{hemoglobin})
+</insert>
+</mapper>

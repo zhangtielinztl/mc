@@ -9,6 +9,12 @@
         <module>../mc-common</module>
         <module>../mc-sso-web</module>
         <module>../mc-portal-web</module>
+        <module>../mc-familydoc</module>
+        <module>../mc-familydoc-web</module>
+        <module>../mc-manager</module>
+        <module>../mc-manager-web</module>
+        <module>../mc-older</module>
+        <module>../mc-older-web</module>
     </modules>
 
     <packaging>pom</packaging>
